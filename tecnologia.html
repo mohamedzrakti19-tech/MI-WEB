@@ -1,100 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Web</title>
+
     <!-- Enlace al archivo CSS principal -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Iconos de Font Awesome (para redes sociales, etc.) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- =====================================
-         HEADER: Encabezado con logo y menú de navegación
-    ====================================== -->
+    <!-- =========================
+         HEADER (Encabezado principal)
+    ========================== -->
     <header class="header">
         <div class="logo-header">
-            <!-- Logo de la web -->
-            <img src="img/logo.png" alt="Logo de la página">
+            <!-- Logo de la página -->
+            <img src="/img/logo.png" alt="">
         </div>
 
         <!-- Menú de navegación -->
         <nav class="nav-menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ropa.html">Ropa</a></li>
-                <li><a href="zapatos.html">Zapatos</a></li>
-                <li><a href="mochilas.html">Mochilas</a></li>
-                <li><a href="tecnologia.html">Tecnología</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <!-- Enlace a la página de registro/inicio de sesión -->
-                <li><a href="registro.html">Registro</a></li>
+                <!-- Enlaces del menú principal -->
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/ropa.html">Ropa</a></li>
+                <li><a href="/zapatos.html">Zapatos</a></li>
+                <li><a href="/mochilas.html">Mochilas</a></li>
+                <li><a href="/tecnologia.html">Tecnologia</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <!-- Aquí podrías conectar el formulario de registro/inicio de sesión -->
+                <li><a href="/registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- =====================================
-         MAIN: Sección principal de productos
-    ====================================== -->
-    <main>
-        <div class="container">
-            <!-- Grid que contiene todas las tarjetas de productos -->
-            <div class="product-grid">
 
-                <!-- ===== Producto 1 ===== -->
-                <div class="product-card">
-                    <img src="productos/Honor PAD X8A.png" alt="Producto 1">
-                    <div class="product-info">
-                        <h3>Honor PAD X8A</h3>
-                        <p>Moderna y de alta calidad.</p>
-                        <span class="price">445,99 €</span>
-                        <!-- Botón para añadir el producto al carrito -->
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
 
-                <!-- ===== Producto 2 (Con rebaja) ===== -->
-                <div class="product-card">
-                    <img src="productos/HP Stream 14 Laptop.png" alt="Producto 2">
-                    <div class="product-info">
-                        <h3>HP Stream 14 Laptop</h3>
-                        <p>Perfecta para trabajos.</p>
-                        <!-- Precio antiguo y nuevo para mostrar rebaja -->
-                        <p class="precio">
-                            <span class="precio-antiguo">290 €</span>
-                            <span class="precio-nuevo">269,99 €</span>
-                        </p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
 
-                <!-- ===== Producto 3 ===== -->
-                <div class="product-card">
-                    <img src="productos/Smartwatch Xiaomi Redmi Watch 5 Lite.png" alt="Producto 3">
-                    <div class="product-info">
-                        <h3>Smartwatch Xiaomi Redmi Watch 5 Lite</h3>
-                        <p>La combinación perfecta de estilo y funcionalidad.</p>
-                        <span class="price">19,99 €</span>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
 
-                <!-- ===== Producto 4 ===== -->
-                <div class="product-card">
-                    <img src="productos/Redmi Note 14.png" alt="Producto 4">
-                    <div class="product-info">
-                        <h3>Redmi Note 14</h3>
-                        <p>Rendimiento y diseño excepcionales.</p>
-                        <span class="price">141,00 €</span>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
+    <!-- ============================
+        APARTADO TECNOLOGÍA
+    ============================ -->
+    <section class="tecnologia-section">
+        <h2>Tecnología</h2>
+        <p>
+            Explora nuestra colección de productos tecnológicos de última generación. Desde smartphones y accesorios hasta gadgets que facilitan tu vida diaria.
+            <br><br>
+            Todos nuestros productos están seleccionados por su calidad, funcionalidad y diseño innovador, asegurando que tengas la mejor experiencia tecnológica.
+            <br><br>
+            Actualizamos nuestro catálogo constantemente para ofrecerte las últimas novedades y tendencias del mercado, manteniéndote siempre conectado y a la vanguardia.
+        </p>
+    </section>
 
-            </div>
-        </div>
-    </main>
+
+
+
 
     <!-- =========================
          FOOTER (Pie de página)
@@ -129,10 +94,10 @@
                 <div class="footer-links">
                     <h4>Tienda</h4>
                     <ul>
-                        <li><a href="Info footer/ropa.html">Ropa</a></li>
-                        <li><a href="Info footer/zapatos.html">Zapatos</a></li>
-                        <li><a href="Info footer/mochilas.html">Mochilas</a></li>
-                        <li><a href="Info footer/tecnologia.html">Tecnologia</a></li>
+                        <li><a href="ropa.html">Ropa</a></li>
+                        <li><a href="zapatos.html">Zapatos</a></li>
+                        <li><a href="mochilas.html">Mochilas</a></li>
+                        <li><a href="tecnologia.html">Tecnologia</a></li>
                     </ul>
                 </div>
 
