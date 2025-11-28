@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web</title>
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- =====================================
+         HEADER: Encabezado con logo y menú de navegación
+    ====================================== -->
+    <header class="header">
+        <div class="logo-header">
+            <!-- Logo de la página -->
+            <img src="img/logo.png" alt="Logo de la página">
+        </div>
+
+        <!-- Menú de navegación principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="zapatos.html">Zapatos</a></li>
+                <li><a href="mochilas.html">Mochilas</a></li>
+                <li><a href="tecnologia.html">Tecnología</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <!-- Enlace a la página de registro/inicio de sesión -->
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =====================================
+         SECCIÓN DE CONTACTO
+         Formulario para enviar mensajes sin usar JS
+    ====================================== -->
+    <section class="contacto">
+      <div class="container">
+        <!-- Título y descripción -->
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna duda o sugerencia? Envíanos un mensaje y te responderemos pronto.</p>
+
+        <!-- Checkbox oculto que simula el estado “mensaje enviado” -->
+        <input type="checkbox" id="fake-send" hidden>
+
+        <!-- Formulario de contacto -->
+        <form class="contact-form">
+          <!-- Grupo de inputs (nombre y correo) -->
+          <div class="input-group">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+          </div>
+
+          <!-- Área de texto para mensaje -->
+          <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+          <!-- Botón que activa el checkbox oculto simulando el envío -->
+          <label for="fake-send" class="btn-enviar">Enviar mensaje</label>
+        </form>
+
+        <!-- Mensaje de confirmación que se muestra al “enviar” -->
+        <div class="mensaje-enviado">
+          ✅ ¡Mensaje enviado con éxito!
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOTER (Pie de página)
+    ========================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+
+                <!-- Sección: Compañía -->
+                <div class="footer-links">
+                    <h4>Compania</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="nuestro-servicio.html">Nuestro servicio</a></li>
+                        <li><a href="politica-de-privacidad.html">Politica de privacidad</a></li>
+                        <li><a href="afiliate.html">Afiliate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Ayuda -->
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas</a></li>
+                        <li><a href="compras.html">Compras</a></li>
+                        <li><a href="envios.html">Envios</a></li>
+                        <li><a href="pago.html">Pago</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Tienda -->
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="Info footer/ropa.html">Ropa</a></li>
+                        <li><a href="Info footer/zapatos.html">Zapatos</a></li>
+                        <li><a href="Info footer/mochilas.html">Mochilas</a></li>
+                        <li><a href="Info footer/tecnologia.html">Tecnologia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Redes sociales -->
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-meta"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

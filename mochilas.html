@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web</title>
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a los iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- =====================================
+         HEADER: Encabezado con logo y menú de navegación
+    ====================================== -->
+    <header class="header">
+        <div class="logo-header">
+            <!-- Logo de la web -->
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="zapatos.html">Zapatos</a></li>
+                <li><a href="mochilas.html">Mochilas</a></li>
+                <li><a href="tecnologia.html">Tecnologia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <!-- Enlace a página de registro/inicio de sesión -->
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- =====================================
+         MAIN: Sección principal de productos
+    ====================================== -->
+    <main>
+        <div class="container">
+            <!-- Grid que contiene todas las tarjetas de productos -->
+            <div class="product-grid">
+
+                <!-- ===== Producto 1 ===== -->
+                <div class="product-card">
+                    <img src="productos/Mochila Compacta.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Mochila Compacta</h3>
+                        <p>Ideal para viajes o clases.</p>
+                        <span class="price">9,99 €</span>
+                        <!-- Botón para añadir el producto al carrito -->
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===== Producto 2 ===== -->
+                <div class="product-card">
+                    <img src="productos/Mochila Eastpak Padded.png" alt="Producto 2">
+                    <div class="product-info">
+                        <h3>Mochila Eastpak Padded</h3>
+                        <p>Ideal para la escuela.</p>
+                        <span class="price">39,99 €</span>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===== Producto 3 ===== -->
+                <div class="product-card">
+                    <img src="productos/VASCHY Mochila Hombres.png" alt="Producto 3">
+                    <div class="product-info">
+                        <h3>VASCHY Mochila Hombres</h3>
+                        <p>Gran capacidad y ligera.</p>
+                        <span class="price">37,89 €</span>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- ===== Producto 4 ===== -->
+                <div class="product-card">
+                    <img src="productos/Mochila de viaje Clisport CIUDELA.png" alt="Producto 4">
+                    <div class="product-info">
+                        <h3>Mochila de viaje Clisport CIUDELA</h3>
+                        <p>Mochila-maleta ideal para viajes.</p>
+                        <!-- Precio con rebaja -->
+                        <p class="precio">
+                            <span class="precio-antiguo">89,99 €</span>
+                            <span class="precio-nuevo">59,99 €</span>
+                        </p>
+                        <button>Añadir al carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =========================
+         FOOTER (Pie de página)
+    ========================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+
+                <!-- Sección: Compañía -->
+                <div class="footer-links">
+                    <h4>Compania</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="nuestro-servicio.html">Nuestro servicio</a></li>
+                        <li><a href="politica-de-privacidad.html">Politica de privacidad</a></li>
+                        <li><a href="afiliate.html">Afiliate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Ayuda -->
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas</a></li>
+                        <li><a href="compras.html">Compras</a></li>
+                        <li><a href="envios.html">Envios</a></li>
+                        <li><a href="pago.html">Pago</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Tienda -->
+                <div class="footer-links">
+                    <h4>Tienda</h4>
+                    <ul>
+                        <li><a href="Info footer/ropa.html">Ropa</a></li>
+                        <li><a href="Info footer/zapatos.html">Zapatos</a></li>
+                        <li><a href="Info footer/mochilas.html">Mochilas</a></li>
+                        <li><a href="Info footer/tecnologia.html">Tecnologia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección: Redes sociales -->
+                <div class="footer-links">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-meta"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

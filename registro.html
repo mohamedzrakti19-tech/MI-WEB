@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title>
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =====================================
+         HEADER: Encabezado con logo y menú de navegación
+    ====================================== -->
+    <header class="header">
+        <div class="logo-header">
+            <!-- Logo de la página -->
+            <img src="img/logo.png" alt="Logo de la página">
+        </div>
+
+        <!-- Menú de navegación principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="zapatos.html">Zapatos</a></li>
+                <li><a href="mochilas.html">Mochilas</a></li>
+                <li><a href="tecnologia.html">Tecnología</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =====================================
+         AUTH WRAPPER: Sección de Inicio de Sesión / Registro
+         Se usan checkboxes ocultos para alternar entre los formularios sin JS
+    ====================================== -->
+    <div class="auth-wrapper">
+        <!-- Checkbox oculto que controla qué formulario se muestra -->
+        <input type="checkbox" id="toggle-auth" hidden>
+
+        <!-- Contenedor principal de los formularios -->
+        <div class="auth-container">
+
+            <!-- =====================================
+                 FORMULARIO DE INICIO DE SESIÓN
+            ====================================== -->
+            <div class="form-box login-form">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Entrar</button>
+
+                    <!-- Enlace que alterna al formulario de registro -->
+                    <p class="switch-text">
+                        ¿No tienes cuenta? 
+                        <label for="toggle-auth" class="switch-link">Regístrate</label>
+                    </p>
+                </form>
+            </div>
+
+            <!-- =====================================
+                 FORMULARIO DE REGISTRO
+            ====================================== -->
+            <div class="form-box register-form">
+                <h2>Crear Cuenta</h2>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+
+                    <!-- Enlace que alterna al formulario de inicio de sesión -->
+                    <p class="switch-text">
+                        ¿Ya tienes cuenta? 
+                        <label for="toggle-auth" class="switch-link">Inicia sesión</label>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
